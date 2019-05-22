@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Stopwatch</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="timer">
+      <div id="daysDiv" style="display: none;">
+        <div class="each">
+          <span id="days">0</span>
+          <span class="text">Days</span>
+        </div>
+        <span>:</span>
+      </div>
+      <div class="each">
+        <span id="hours">00</span>
+        <span class="text">Hours</span>
+      </div>
+      <span>:</span>
+      <div class="each">
+        <span id="minutes">00</span>
+        <span class="text">Minutes</span>
+      </div>
+      <span>:</span>
+      <div class="each">
+        <span id="seconds">00</span>
+        <span class="text">Seconds</span>
+      </div>
+      <div id="milsDiv" style="display: none;">
+        <span>:</span>
+        <div class="each">
+          <span id="milliseconds">00</span>
+          <span class="text">Milliseconds</span>
+        </div>
+      </div>
+      <button id="showmil" onclick="toggleDisplay()">Show Milli- seconds</button>
+    </div>
+    <div>
+      <button id="start" onclick="start()">START<br><i class="fas fa-play"></i></button>
+      <button id="stop" onclick="stop()">PAUSE<br><i class="fas fa-pause"></i></button>
+      <button id="reset" onclick="reset()">RESET<br><i class="fas fa-undo-alt"></i></i></button>
+    </div>
+  </div>
+  </div>
+  <div id="off" style="display: none;">
+  </div>
+  <button id="turnoff" onclick="toggleScreen()"><i class="fas fa-power-off"></i></button>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
